@@ -6,7 +6,8 @@
 def check_nulls(df):
     return df.isnull().sum()
 
-
+# 
+# 
 if __name__=="__main__":
 
 
