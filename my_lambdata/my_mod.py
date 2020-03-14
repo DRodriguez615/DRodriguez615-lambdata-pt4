@@ -2,7 +2,7 @@
 # my_lambdata/my_mod.py
 
 def check_nulls(n):
-    return n.isnull().sum() 
+    return (n.isnull().sum()) 
 
 # print("JUNK")
 # print("GLOBAL SCOPE")
