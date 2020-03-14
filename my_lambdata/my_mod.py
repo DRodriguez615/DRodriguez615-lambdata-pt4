@@ -1,8 +1,9 @@
 
 # my_lambdata/my_mod.py
 
-def check_nulls(n):
-    return (n.isnull().sum()) 
+
+def enlarge(n):
+    return n * 100 
 
 # print("JUNK")
 # print("GLOBAL SCOPE")
@@ -18,4 +19,4 @@ if __name__=="__main__":
     print("GLOBAL SCOPE")
 
     y = float(input("PLEASE INPUT A NUMBER TO ENLARGE"))
-    print(enlarge(y))
+    print(enlarge(y)) 
