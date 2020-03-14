@@ -7,6 +7,8 @@ def check_nulls(df):
     return df.isnull().sum()
 
 
+if __name__=="__main__":
 
-print("JUNK")
-print("TEST")
+
+    print("JUNK")
+    print("TEST")
