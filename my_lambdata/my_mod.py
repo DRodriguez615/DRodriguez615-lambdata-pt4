@@ -1,9 +1,9 @@
 
 # my_lambdata/my_mod.py
 
-def enlarge(n):
-    return n * 100 
-7
+def check_nulls(n):
+    return n.isnull().sum() 
+
 # print("JUNK")
 # print("GLOBAL SCOPE")
 
