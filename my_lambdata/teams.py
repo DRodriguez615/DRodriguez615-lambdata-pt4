@@ -1,5 +1,6 @@
 # example teams.py (OOp inheritance approach)
 
+
 class Team():
     def __init__(self, name, city, players=["Player 1"]):
         self.name = name
@@ -9,7 +10,6 @@ class Team():
     def advertise(self):
         # print(f"HEY COME TO {my_team['city'].upper()} TO SEE OUR GAMES!!!")
         print(f"HEY COME TO {self.city.upper()} TO SEE OUR GAMES!!!")
-        
 
     @property
     def full_name(self):
@@ -24,9 +24,8 @@ class BaseballTeam(Team):
 
     def advertise(self):
         # print(f"HEY COME TO {my_team['city'].upper()} TO SEE OUR GAMES!!!")
-        print(f"HEY COME TO {self.city.upper()} TO SEE OUR PITCHER {self.starting_pitcher}!!!")
-        
-
+        print(
+            f"HEY COME TO {self.city.upper()} TO SEE OUR PITCHER {self.starting_pitcher}!!!")
 
 
 if __name__ == "__main__":
@@ -35,7 +34,6 @@ if __name__ == "__main__":
     print(football_team.full_name)
     football_team.advertise()
 
-
     teams = [
         {"city": "New York", "name": "Yankees", "pitcher": "John"},
         {"city": "New York", "name": "Mets", "pitcher": "Jane"},
@@ -43,9 +41,12 @@ if __name__ == "__main__":
         {"city": "New Haven", "name": "Ravens", "pitcher": "Vishal"},
         {"city": "Washington", "name": "Nationals", "pitcher": "Cody"}
     ]
- 
+
     for team_attributes in teams:
-        team = BaseballTeam(name = team_attributes["name"], city = team_attributes["city"], starting_pitcher = team_attributes["pitcher"])
+        team = BaseballTeam(
+            name=team_attributes["name"],
+            city=team_attributes["city"],
+            starting_pitcher=team_attributes["pitcher"])
         print("-------")
         # print(full_name(team))
         # advertise(team)
@@ -54,16 +55,12 @@ if __name__ == "__main__":
         print(team.players)
         print(team.starting_pitcher)
         team.advertise()
-        
 
-
-
-    
     # df1 = DataFrame({"x": [1,2,3,], "y":[4,5,6,]})
     # df1.head()
     # df2 = DataFrame({"x": [7,7,7], "y": [4,4,4]})
     # df2.head()
-     
+
     # team = Team(city= "Washington", name="Wizards") # initialize / create an instance
     # print(team)
     # print(type(team))
